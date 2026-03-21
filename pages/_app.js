@@ -4,12 +4,12 @@ import Footer from '@/components/Footer'
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Header />
       <main className="pt-[112px]">
         <Component {...pageProps} />
       </main>
       <Footer />
-    </>
+      </div>
   )
 }
