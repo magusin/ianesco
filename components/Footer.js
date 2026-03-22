@@ -10,7 +10,7 @@ export default function Footer() {
         {/* LOGO */}
         <div>
           <img
-            src="/logo.png" // 👉 ton logo blanc
+            src="/logo.png"
             alt="IANESCO"
             className="h-15 mb-2"
           />

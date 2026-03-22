@@ -66,7 +66,7 @@ export default function Header() {
             </div>
           </div>
 
-          <Link href="/laboratoire" className="hover:opacity-80 transition">
+          <Link href="/notre-laboratoire" className="hover:opacity-80 transition">
             Notre Laboratoire
           </Link>
 
@@ -111,7 +111,7 @@ export default function Header() {
             )}
           </div>
 
-          <Link href="/laboratoire">Notre Laboratoire</Link>
+          <Link href="/notre-laboratoire">Notre Laboratoire</Link>
           <Link href="/actualites">Nos Actualités</Link>
           <Link href="/espace-client">Espace Client</Link>
 
