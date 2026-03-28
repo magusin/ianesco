@@ -86,8 +86,8 @@ export default function NotreLaboratoire() {
       <section className="bg-[#048CBB] text-white py-20">
         <div className="max-w-4xl mx-auto px-6">
 
-          <h2 className="text-3xl font-bold mb-12 text-center">
-            L'évolution du laboratoire
+          <h2 className="text-4xl font-bold mb-12 text-center text-white">
+          L'évolution du laboratoire depuis 1952
           </h2>
 
           <div className="space-y-8">
@@ -103,10 +103,10 @@ export default function NotreLaboratoire() {
               { year: "2021", text: "Rachat par la direction." }
             ].map((item, i) => (
               <div key={i} className="flex gap-6 items-start">
-                <div className="font-bold text-xl min-w-[80px]">
+                <div className="font-bold text-2xl min-w-[80px]">
                   {item.year}
                 </div>
-                <div className="opacity-90">
+                <div className="opacity-90 text-2xl">
                   {item.text}
                 </div>
               </div>
@@ -118,97 +118,142 @@ export default function NotreLaboratoire() {
       </section>
 
       {/* ================= ACCREDITATIONS ================= */}
-      <section className="py-20">
-        <div className="max-w-6xl mx-auto px-6">
+{/* ================= INTRO ================= */}
+<section className="py-24 bg-[#f5f7f9]">
+  <div className="max-w-5xl mx-auto px-6 text-center">
 
-          <h2 className="text-3xl font-bold mb-6">
-            Accréditations et agréments
-          </h2>
+    <h2 className="text-4xl font-bold text-[#048CBB] mb-10 uppercase tracking-wide">
+      Accréditations et agréments
+    </h2>
 
-          <p className="text-gray-700 mb-10">
-            IANESCO garantit un haut niveau de fiabilité grâce à son système qualité,
-            son personnel qualifié et ses équipements performants.
-          </p>
+    <div className="space-y-6 text-gray-600 leading-relaxed text-lg">
+      <p>
+        IANESCO est un laboratoire possédant des reconnaissances nécessaires pour garantir à ses clients un haut niveau de fiabilité et d’expertise.
+      </p>
+      <p>
+        Pour ce faire et obtenir des résultats d’analyses le plus exact possible, dans des délais les plus courts, il est nécessaire d’utiliser des méthodes d’analyses adaptées, du personnel formé et qualifié, et du matériel étalonné.
+      </p>
+      <p>
+        Le système qualité mis en place au laboratoire permet de s’assurer que ces critères sont bien respectés.
+      </p>
+      <p>
+        Nous plaçons nos clients au centre de nos préoccupations pour maintenir leur satisfaction.
+      </p>
+    </div>
 
-          <div className="grid lg:grid-cols-3 gap-10 items-center">
+  </div>
+</section>
 
-            <img
-              src="/images/labo/cofrac.png"
-              alt="Cofrac"
-              className="mx-auto"
-            />
 
-            <div>
-              <h3 className="text-xl font-semibold mb-4">
-                Accréditation COFRAC
-              </h3>
+{/* ================= COFRAC ================= */}
+<section className="py-24">
+  <div className="max-w-7xl mx-auto px-6">
 
-              <p className="text-gray-700 mb-4">
-                Accrédité depuis 1996 selon la norme NF EN ISO/CEI 17025.
-              </p>
+    <h2 className="text-3xl font-bold text-center mb-16">
+      Accréditation COFRAC
+    </h2>
 
-              <div className="flex flex-col gap-3">
-                <a href="#" className="bg-[#048CBB] text-white px-4 py-2 rounded">
-                  Télécharger diplôme
-                </a>
-                <a href="#" className="border px-4 py-2 rounded">
-                  Attestation
-                </a>
-              </div>
-            </div>
+    <div className="grid lg:grid-cols-3 gap-16 items-center">
 
-          </div>
+      {/* LOGO */}
+      <div className="flex justify-center">
+        <img src="/images/cofrac.png" className="max-w-[220px]" />
+      </div>
 
-        </div>
-      </section>
+      {/* TEXTE */}
+      <div className="space-y-6 text-gray-700 leading-relaxed text-lg">
+        <p>
+          Depuis 1996, le laboratoire est accrédité par le COFRAC (Comité Français d’accréditation).
+        </p>
+        <p>
+          Conforme à la norme NF EN ISO/CEI 17025 : 2017 pour les analyses et essais.
+        </p>
+        <p>
+          Cette accréditation est reconnue internationalement grâce aux accords multilatéraux.
+        </p>
+      </div>
 
-      {/* ================= AGREMENTS ================= */}
-      <section className="bg-[#f5f7f9] py-20">
-        <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-3 gap-10 items-center">
+      {/* BOUTONS */}
+      <div className="flex flex-col gap-6">
+        <a className="bg-[#F8AE29] hover:bg-[#e79d1f] text-white px-6 py-4 rounded-lg text-center font-semibold transition hover:scale-[1.02]">
+          📄 Télécharger notre diplôme COFRAC
+        </a>
+        <a className="bg-[#F8AE29] hover:bg-[#e79d1f] text-white px-6 py-4 rounded-lg text-center font-semibold transition hover:scale-[1.02]">
+          📄 Attestation et annexe technique
+        </a>
+      </div>
 
-          <div className="flex flex-col gap-4">
-            <img src="/images/labo/ministere1.png" alt="" />
-            <img src="/images/labo/ministere2.png" alt="" />
-          </div>
+    </div>
+  </div>
+</section>
 
-          <div>
-            <h3 className="text-xl font-semibold mb-4">
-              Agréments des ministères
-            </h3>
-            <p className="text-gray-700">
-              IANESCO est agréé depuis 1973 pour le contrôle de l’eau et des analyses sanitaires.
-            </p>
-          </div>
 
-          <div className="flex flex-col gap-3">
-            <a href="#" className="bg-[#048CBB] text-white px-4 py-2 rounded">
-              Agrément environnement
-            </a>
-            <a href="#" className="border px-4 py-2 rounded">
-              Agrément santé
-            </a>
-          </div>
+{/* ================= MINISTERES ================= */}
+<section className="py-24 bg-[#f5f7f9]">
+  <div className="max-w-7xl mx-auto px-6">
 
-        </div>
-      </section>
+    <h2 className="text-3xl font-bold text-center mb-16">
+      Agréments des ministères
+    </h2>
 
-      {/* ================= CIR ================= */}
-      <section className="py-20">
-        <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-3 gap-10 items-center">
+    <div className="grid lg:grid-cols-3 gap-16 items-center">
 
-          <img src="/images/labo/cir.png" alt="" />
+      {/* LOGOS */}
+      <div className="flex flex-col items-center gap-10">
+        <img src="/images/ministere1.png" className="max-w-[220px]" />
+        <img src="/images/ministere2.png" className="max-w-[220px]" />
+      </div>
 
-          <div>
-            <h3 className="text-xl font-semibold mb-4">
-              Crédit Impôt Recherche
-            </h3>
-            <p className="text-gray-700">
-              Les travaux réalisés par IANESCO peuvent ouvrir droit au crédit d’impôt recherche.
-            </p>
-          </div>
+      {/* TEXTE */}
+      <div className="space-y-6 text-gray-700 leading-relaxed text-lg">
+        <p>
+          Depuis 1973, IANESCO est agréé par les ministères en charge de l’environnement et de la santé.
+        </p>
+      </div>
 
-        </div>
-      </section>
+      {/* BOUTONS */}
+      <div className="flex flex-col gap-6">
+        <a className="bg-[#F8AE29] text-white px-6 py-4 rounded-lg text-center font-semibold hover:scale-[1.02] transition">
+          📄 Agrément environnement
+        </a>
+        <a className="bg-[#F8AE29] text-white px-6 py-4 rounded-lg text-center font-semibold hover:scale-[1.02] transition">
+          📄 Agrément santé
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+{/* ================= CIR ================= */}
+<section className="py-24">
+  <div className="max-w-7xl mx-auto px-6">
+
+    <h2 className="text-3xl font-bold text-center mb-16">
+      Crédit Impôt Recherche
+    </h2>
+
+    <div className="grid lg:grid-cols-3 gap-16 items-center">
+
+      {/* LOGO */}
+      <div className="flex justify-center">
+        <img src="/images/cir.png" className="max-w-[300px]" />
+      </div>
+
+      {/* TEXTE */}
+      <div className="space-y-6 text-gray-700 leading-relaxed text-lg">
+        <p>
+          IANESCO est agréé Crédit Impôt Recherche.
+        </p>
+        <p>
+          Les travaux réalisés peuvent ouvrir droit au crédit d’impôt en faveur de la recherche (C.I.R).
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* ================= CONTACT ================= */}
       <ContactSection />
